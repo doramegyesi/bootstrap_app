@@ -16,10 +16,13 @@
             .img-responsive {
                 padding: 5px;
             }
+            .main {
+                margin: 5px;
+            }
         </style>
     </head>
 
-    <body>
+    <body data-spy="scroll" data-target=#my-navbar>
         <!--Navbar-->
         <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
             <div class="container">
@@ -51,9 +54,9 @@
                 <h2>Dori's awesome responsive website</h2>
                 <p>Scream for no reason at 4 am. Leave dead animals as gifts. Unwrap toilet paper. Attack feet, eat plants, meow, and throw up because you ate plants, nap all day, crash against wall but walk away like nothing happened, poop in the plant pot.</p>
                 <div class="container">
-                    <a href="" class="btn btn-lg btn-info">Download app</a>
-                    <a href="" class="btn btn-lg btn-primary">Visit store</a>
-                    <a href="" class="btn btn-lg btn-info">Spread the word</a>
+                    <a href="" class="btn btn-lg btn-info main">Download app</a>
+                    <a href="" class="btn btn-lg btn-primary main">Visit store</a>
+                    <a href="" class="btn btn-lg btn-info main">Spread the word</a>
                 </div>
             </div>
         </div>
@@ -64,19 +67,19 @@
                     <h2>Feedback <small>- Some nice feedbacks.</small></h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <blockquote>
                             <p>Intrigued by the shower, stare at human while pushing stuff off a table, yet flee in terror at cucumber discovered on floor. Be the most annoying cat that you can.</p>
-                            <footer>Motyo kitty</footer>
+                            <footer>Majestic Motyo</footer>
                         </blockquote>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <blockquote>
                             <p>Hide when guests come over, instantly break out into full speed gallop across the house for no reason so destroy couch as revenge, spread kitty litter all over house and lick the other cats.</p>
-                            <footer>Motyo kitty</footer>
+                            <footer>Giovanni Gatto</footer>
                         </blockquote>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <blockquote>
                             <p>Chew foot. Warm up laptop with butt. Purr as loud as possible.</p>
                             <footer>Princess Miju</footer>
@@ -168,35 +171,35 @@
                     <h2>Features <small>- Some of the coolest features of this app.</small></h2>
                 </div>
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-sm-8">
                         <h3>Some excellent kitty stuff</h3>
                         <p>Annoy kitten sister with poking and sometimes switch in french and say "miaou" just because well why not. Run out of litter box at full speed, chase imaginary bugs, then lick the curtain just to be annoying. Eat than sleep on your face, lick arm hair, pee in the shoe and curl into a furry donut. After napping all day, walk on car leaving trail of paw prints on hood and windshield.</p>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-4">
                         <img src="5.jpg" class="img-responsive" alt="lil kitty">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-sm-8">
                         <h3>Being a cute fluffball</h3>
                         <p>Chase dog then run away. Say meow repeatedly, make sure to steal water from the toilet. Dead stare with ears cocked, knock everything off the table. Wake up human for food at 4am. Plan steps for world domination. Leave fur on owners clothes, sleep on keyboard, attack feet then puke giant foamy fur-balls.</p>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-4">
                         <img src="6.jpg" class="img-responsive" alt="lil kitty">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-sm-8">
                         <h3>Rule the worls</h3>
                         <p>Lick butt.</p>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-4">
                         <img src="7.jpg" class="img-responsive" alt="lil kitty">
                     </div>
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-sm-4">
                         <div class="panel panel-primary">
                             <div class="panel-body">
                                 <h4>Cat things</h4>
@@ -204,7 +207,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-4">
                         <div class="panel panel-primary">
                             <div class="panel-body">
                                 <h4>Kitty cat thoughts</h4>
@@ -212,11 +215,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-sm-4">
                         <div class="panel panel-primary">
                             <div class="panel-body">
                                 <h4>Being a cat</h4>
-                                <p>Meow for food, then when human fills food dish, take a few bites of food and continue meowing. Destroy all furniture, especially the couch.</p>
+                                <p>Meow for food. When human fills food dish, take a few bites and continue meowing. Destroy all furniture.</p>
                             </div>
                         </div>
                     </div>
@@ -324,6 +327,33 @@
                 </div>
             </section>
         </div>
+
+        <!--Footer-->
+        <footer>
+            <hr>
+            <div class="container text-center">
+                <h3>Subscribe for more free stuff</h3>
+                <p>Enter your name end e-mail address</p>
+                <form action="" class="form-inline">
+                    <div class="form-group">
+                        <label for="subscription">Subscribe</label>
+                        <input type="text" class="form-control" id="subscription" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your e-mail address">
+                    </div>
+                    <button type="submit" class="btn btn-default">Subscribe</button>
+                </form>
+                <hr>
+                <ul class="list-inline">
+                    <li><a href="https://twitter.com/emrgencykittens">Twitter</a></li>
+                    <li><a href="https://www.facebook.com/paradise4cats/">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/user/Videosforyourcat">Youtube</a></li>
+                </ul>
+                <p>&copy; Copyright @ 2017</p>
+            </div>
+        </footer>
 
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->
